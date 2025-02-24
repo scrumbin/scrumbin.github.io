@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Scrumbin</title>
+    <link rel="icon" href="icon.PNG" type="image/x-icon">
+		<style>
+		body {
+			background-color: rgb(0, 43, 54);
+		}
+
+		textarea::-webkit-scrollbar {
+				display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge and Firefox */
+		textarea {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
+
+		textarea {
+			position: fixed;
+			width: 95%;
+			height: 95%;
+			left: 2.5%;
+			top: 2.5%;
+			border: none;
+			background-color: rgb(0, 43, 54);
+			color:#fff;
+			resize: none;
+			outline: none !important;
+			border: none !important;
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+			overflow: auto;
+			white-space: nowrap;
+		}
+		button {
+			position: absolute;
+			top: 0px;
+			left: 85%;
+			width: 15%;
+			height: 6%;
+			background-color: rgb(0, 34, 43);
+			border: none;
+			color: rgb(143,188,200);
+			font-size: 1.6vw;
+			outline: none !important;
+			border: none !important;
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+		}
+		#ttl {
+			top: 6%;
+			color: rgb(180,210,235);
+			height: 4%;
+			font-size: 1.2vw;
+			background-color: rgb(8,50,60);
+			transition: color .2s;
+		}
+		#ttl:hover {
+			color: rgb(210,240,255);
+		}
+		</style>
+  </head>
+  <body>
+		<form method="post">
+			<textarea type="text" name="code"></textarea><br>
+			<button type="submit" id="ttl">submit</button>
+		</form>
+		<button onclick="window.location = 'info';">Scrumbin™</button>
+  </body>
+</html>
